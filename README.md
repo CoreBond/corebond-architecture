@@ -52,6 +52,21 @@ end
 
 
 ```
+## Identity Derivation Process
+
+CoreBond derives device identity from measurable physical characteristics of the hardware rather than stored credentials.
+
+A device generates a physical identity signal based on intrinsic hardware properties. This signal is observed or measured and evaluated by a verifier.
+
+A simplified process is as follows:
+
+1. The device hardware produces a measurable identity signal derived from intrinsic physical characteristics.
+2. The signal is observed or measured by the verification system.
+3. The verifier compares the observed signal against expected identity characteristics.
+4. The verifier determines whether the device identity is valid.
+5. An authentication decision is returned to the system.
+
+This model avoids the need for stored secrets or key exchange between the device and authentication infrastructure.
 ## Security Assumptions
 
 The CoreBond model assumes the following conditions:
