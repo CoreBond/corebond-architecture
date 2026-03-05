@@ -105,6 +105,6 @@ CoreBond is designed to provide the following security properties:
 • Simplified trust establishment during device pairing  
 • Deterministic device identity within defined environmental tolerances
 
-##Limitations
+## Limitations
 CoreBond does not prevent device compromise if an attacker gains full control of device hardware. 
 The model focuses on preventing credential extraction and device cloning rather than runtime compromise.
