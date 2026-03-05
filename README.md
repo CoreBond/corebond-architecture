@@ -94,14 +94,13 @@ CoreBond focuses on architectures intended to reduce risks associated with crede
 This model assumes attackers may gain firmware access or physical access
 to devices and therefore focuses on removing stored credentials that could
 be extracted and reused.
+
 ## Security Properties
+
 CoreBond is designed to provide the following security properties:
 
-• Device authentication without stored credentials
-• Reduced risk of credential extraction or reuse
-• Resistance to device cloning through intrinsic hardware identity
-• Simplified trust establishment during device pairing
-Further research is required to evaluate resilience against:
-• signal replay
-• environmental variation
-• side-channel observation
+• Device authentication without stored credentials  
+• Reduced risk of credential extraction or reuse  
+• Resistance to device cloning through intrinsic hardware identity  
+• Simplified trust establishment during device pairing  
+• Deterministic device identity within defined environmental tolerances
