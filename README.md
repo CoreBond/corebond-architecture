@@ -49,6 +49,8 @@ Further research is required to evaluate resilience against:
 Most IoT systems rely on stored secrets that can be extracted, cloned, or reused once a device is compromised.
 
 ## Problem With Traditional Device Authentication
+Most IoT systems rely on stored secrets that can be extracted, cloned, or reused once a device is compromised.
+
 CoreBond replaces stored credentials with a hardware-derived physical identity signal.
 ## Traditional vs CoreBond Authentication
 
