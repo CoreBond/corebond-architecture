@@ -11,16 +11,3 @@ style A fill:#1f4e79,color:#fff
 style B fill:#4f81bd,color:#fff
 style C fill:#6aa84f,color:#fff
 style D fill:#b45f06,color:#fff
-## Authentication Architecture
-
-
-That last ``` is what tells GitHub “render the diagram now.”
-
----
-
-### 2. The diagram appears twice
-In the screenshot you have **two identical sections**:
-
-
-
-
