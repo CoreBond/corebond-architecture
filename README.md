@@ -33,3 +33,15 @@ Device → Physical Identity Signal → Verifier → Authentication Decision
 
 No stored secret  
 No key exchange
+## Threat Model Considerations
+CoreBond explores architectures intended to reduce risks associated with
+credential extraction and device cloning.
+
+This model assumes attackers may gain firmware access or physical access
+to devices and therefore focuses on removing stored credentials that could
+be extracted and reused.
+
+Further research is required to evaluate resilience against:
+• signal replay
+• environmental variation
+• side-channel observation
