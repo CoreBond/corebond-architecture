@@ -54,7 +54,7 @@ end
 ```
 ## Identity Derivation Process
 
-CoreBond derives device identity from measurable physical characteristics of the hardware rather than stored credentials.
+CoreBond derives device identity from measurable intrinsic hardware characteristics rather than stored credentials.
 
 A device generates a physical identity signal based on intrinsic hardware properties. This signal is observed or measured and evaluated by a verifier.
 
