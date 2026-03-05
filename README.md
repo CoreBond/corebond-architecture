@@ -73,11 +73,11 @@ The resulting identity signal is deterministic for a given device within defined
 Device identity may be derived from multiple intrinsic hardware characteristics whose combined measurements form a stable identity signal.
 ## Enrollment Model
 
-CoreBond establishes device identity during the initial linking of two devices.
+CoreBond establishes a baseline device identity during the initial linking of two devices.
 
 When devices are first connected, the verifier observes the intrinsic hardware identity signal and records the resulting identity characteristics. This observation forms the baseline identity profile for the device.
 
-Future authentication decisions are made by comparing subsequent identity measurements against this baseline profile.
+Future authentication decisions compare subsequent identity measurements against this baseline profile.
 
 This enrollment process allows devices to establish trust relationships without pre-provisioned credentials or externally distributed secrets.
 ## Security Assumptions
@@ -94,7 +94,13 @@ CoreBond focuses on architectures intended to reduce risks associated with crede
 This model assumes attackers may gain firmware access or physical access
 to devices and therefore focuses on removing stored credentials that could
 be extracted and reused.
+## Security Properties
+CoreBond is designed to provide the following security properties:
 
+• Device authentication without stored credentials
+• Reduced risk of credential extraction or reuse
+• Resistance to device cloning through intrinsic hardware identity
+• Simplified trust establishment during device pairing
 Further research is required to evaluate resilience against:
 • signal replay
 • environmental variation
