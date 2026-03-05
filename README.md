@@ -9,7 +9,7 @@ The goal is to explore authentication systems that eliminate stored credentials 
 
 This repository focuses on architecture and security model discussion rather than production implementation.
 ## Concept
-CoreBond derives device identity from intrinsic physical characteristics of hardware rather than stored secrets or key exchange mechanisms.
+CoreBond derives device identity from intrinsic physical characteristics of hardware rather than stored credentials.
 
 ## Goals
 - Remove stored secrets from device authentication
@@ -35,7 +35,7 @@ No stored secret
 No key exchange
 
 ## Traditional vs CoreBond Authentication
-
+The following diagram illustrates the CoreBond authentication flow.
 ```mermaid
 flowchart TD
 
