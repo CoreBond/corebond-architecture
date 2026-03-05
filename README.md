@@ -35,21 +35,22 @@ No stored secret
 No key exchange
 
 ## Traditional vs CoreBond Authentication
-The following diagram illustrates the CoreBond authentication flow.
+The following diagrams compare traditional stored-credential authentication with the CoreBond identity model.
+
 ```mermaid
 flowchart LR
-
+subgraph CoreBond Authentication
+E[Device Hardware] --> F[Physical Identity Signal]
+F --> G[Verifier]
+G --> H[Authentication Decision]
+end
 subgraph Traditional Authentication
 A[Device] --> B[Stored Secret]
 B --> C[Authentication Server]
 C --> D[Verification]
 end
 
-subgraph CoreBond Authentication
-E[Device Hardware] --> F[Physical Identity Signal]
-F --> G[Verifier]
-G --> H[Authentication Decision]
-end
+
 ```
 ## Threat Model Considerations
 CoreBond explores architectures intended to reduce risks associated with
