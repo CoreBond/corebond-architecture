@@ -65,8 +65,11 @@ A simplified process is as follows:
 3. The verifier evaluates the observed signal against expected identity characteristics.
 4. The verifier determines whether the device identity is valid.
 5. An authentication decision is returned to the system.
+
 This approach enables device authentication without storing credentials on the device or exchanging secrets with the authentication infrastructure.
+
 The resulting identity signal is deterministic for a given device within defined environmental tolerances.
+
 Device identity may be derived from multiple intrinsic hardware characteristics whose combined measurements form a stable identity signal.
 ## Security Assumptions
 
