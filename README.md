@@ -33,6 +33,8 @@ Device → Physical Identity Signal → Verifier → Authentication Decision
 
 No stored secret  
 No key exchange
+## Problem With Traditional Device Authentication
+Most IoT systems rely on stored secrets that can be extracted, cloned, or reused once a device is compromised.
 ## Threat Model Considerations
 CoreBond explores architectures intended to reduce risks associated with
 credential extraction and device cloning.
@@ -46,7 +48,7 @@ Further research is required to evaluate resilience against:
 • environmental variation
 • side-channel observation
 
-## Problem With Traditional Device Authentication
+
 
 ## Traditional vs CoreBond Authentication
 
