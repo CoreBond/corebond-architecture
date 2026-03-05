@@ -45,3 +45,17 @@ Further research is required to evaluate resilience against:
 • signal replay
 • environmental variation
 • side-channel observation
+## CoreBond Authentication Architecture
+
+```mermaid
+flowchart TD
+
+A[Device Hardware] --> B[Physical Identity Signal]
+B --> C[Verifier]
+C --> D[Authentication Decision]
+
+style A fill:#1f4e79,color:#fff
+style B fill:#4f81bd,color:#fff
+style C fill:#6aa84f,color:#fff
+style D fill:#b45f06,color:#fff
+```
