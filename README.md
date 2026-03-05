@@ -37,16 +37,19 @@ No key exchange
 ## Traditional vs CoreBond Authentication
 The following diagram illustrates the CoreBond authentication flow.
 ```mermaid
-flowchart TD
+flowchart LR
 
-A[Device Hardware] --> B[Physical Identity Signal]
-B --> C[Verifier]
-C --> D[Authentication Decision]
+subgraph Traditional Authentication
+A[Device] --> B[Stored Secret]
+B --> C[Authentication Server]
+C --> D[Verification]
+end
 
-style A fill:#1f4e79,color:#fff
-style B fill:#4f81bd,color:#fff
-style C fill:#6aa84f,color:#fff
-style D fill:#b45f06,color:#fff
+subgraph CoreBond Authentication
+E[Device Hardware] --> F[Physical Identity Signal]
+F --> G[Verifier]
+G --> H[Authentication Decision]
+end
 ```
 ## Threat Model Considerations
 CoreBond explores architectures intended to reduce risks associated with
