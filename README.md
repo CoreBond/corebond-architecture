@@ -61,8 +61,7 @@ The CoreBond model assumes the following conditions:
 • Attackers may gain firmware access or limited physical access to a device.  
 • Attackers cannot easily reproduce the intrinsic physical characteristics of the original hardware.
 ## Threat Model Considerations
-CoreBond explores architectures intended to reduce risks associated with
-credential extraction and device cloning.
+CoreBond focuses on architectures intended to reduce risks associated with credential extraction and device cloning.
 
 This model assumes attackers may gain firmware access or physical access
 to devices and therefore focuses on removing stored credentials that could
