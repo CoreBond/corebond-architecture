@@ -50,7 +50,27 @@ Most IoT systems rely on stored secrets that can be extracted, cloned, or reused
 
 ## Problem With Traditional Device Authentication
 CoreBond replaces stored credentials with a hardware-derived physical identity signal.
+## Traditional vs CoreBond Authentication
 
+```mermaid
+flowchart LR
+
+subgraph Traditional IoT Authentication
+A[Device] --> B[Stored Secret]
+B --> C[Authentication Server]
+C --> D[Access Granted]
+end
+
+subgraph CoreBond Authentication
+E[Device Hardware] --> F[Physical Identity Signal]
+F --> G[Verifier]
+G --> H[Authentication Decision]
+end
+
+style B fill:#b85450,color:#fff
+style F fill:#4f81bd,color:#fff
+style G fill:#6aa84f,color:#fff
+```
 ```mermaid
 flowchart TD
 
