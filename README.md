@@ -53,13 +53,6 @@ CoreBond replaces stored credentials with a hardware-derived physical identity s
 ## Traditional vs CoreBond Authentication
 
 ```mermaid
-flowchart LR
-
-subgraph Traditional IoT Authentication
-A[Device] --> B[Stored Secret]
-B --> C[Authentication Server]
-C --> D[Access Granted]
-end
 
 subgraph CoreBond Authentication
 E[Device Hardware] --> F[Physical Identity Signal]
