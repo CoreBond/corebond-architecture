@@ -9,7 +9,7 @@ The goal is to explore authentication systems that eliminate stored credentials 
 
 This repository focuses on architecture and security model discussion rather than production implementation.
 ## Concept
-CoreBond investigates deriving device identity from intrinsic physical characteristics of hardware rather than stored secrets or key exchange mechanisms.
+CoreBond derives device identity from intrinsic physical characteristics of hardware rather than stored secrets or key exchange mechanisms.
 
 ## Goals
 - Remove stored secrets from device authentication
