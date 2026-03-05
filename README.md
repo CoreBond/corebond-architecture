@@ -53,18 +53,6 @@ CoreBond replaces stored credentials with a hardware-derived physical identity s
 ## Traditional vs CoreBond Authentication
 
 ```mermaid
-
-subgraph CoreBond Authentication
-E[Device Hardware] --> F[Physical Identity Signal]
-F --> G[Verifier]
-G --> H[Authentication Decision]
-end
-
-style B fill:#b85450,color:#fff
-style F fill:#4f81bd,color:#fff
-style G fill:#6aa84f,color:#fff
-```
-```mermaid
 flowchart TD
 
 A[Device Hardware] --> B[Physical Identity Signal]
