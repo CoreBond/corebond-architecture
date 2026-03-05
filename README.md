@@ -102,7 +102,7 @@ CoreBond is designed to provide the following security properties:
 • Device authentication without stored credentials  
 • Reduced risk of credential extraction or reuse  
 • Resistance to device cloning through intrinsic hardware identity  
-• Simplified trust establishment during device pairing  
+• Simplified trust establishment during initial device pairing 
 • Deterministic device identity within defined environmental tolerances
 
 ## Limitations
