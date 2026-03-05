@@ -9,7 +9,7 @@ The goal is to explore authentication systems that eliminate stored credentials 
 
 This repository focuses on architecture and security model discussion rather than production implementation.
 ## Concept
-CoreBond derives device identity from intrinsic physical characteristics of hardware rather than stored credentials.
+CoreBond derives device identity from intrinsic characteristics of hardware rather than stored credentials.
 
 ## Goals
 - Remove stored secrets from device authentication
@@ -62,11 +62,10 @@ A simplified process is as follows:
 
 1. The device hardware produces a measurable identity signal derived from intrinsic physical characteristics.
 2. The signal is observed or measured by the verification system.
-3. The verifier compares the observed signal against expected identity characteristics.
+3. The verifier evaluates the observed signal against expected identity characteristics.
 4. The verifier determines whether the device identity is valid.
 5. An authentication decision is returned to the system.
-
-This model avoids the need for stored secrets or key exchange between the device and authentication infrastructure.
+This approach enables device authentication without storing credentials on the device or exchanging secrets with the authentication infrastructure.
 ## Security Assumptions
 
 The CoreBond model assumes the following conditions:
