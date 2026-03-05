@@ -52,6 +52,14 @@ end
 
 
 ```
+## Security Assumptions
+
+The CoreBond model assumes the following conditions:
+
+• Device hardware characteristics produce stable, measurable identity signals.  
+• The verifier can observe or measure these signals with sufficient fidelity.  
+• Attackers may gain firmware access or limited physical access to a device.  
+• Attackers cannot perfectly reproduce the intrinsic physical characteristics of the original hardware.
 ## Threat Model Considerations
 CoreBond explores architectures intended to reduce risks associated with
 credential extraction and device cloning.
