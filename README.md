@@ -1,7 +1,13 @@
 # CoreBond Architecture
 
 Exploration of a hardware-rooted device identity model designed to eliminate stored credentials in IoT authentication systems.
+## Status
 
+This repository documents the conceptual architecture behind the CoreBond device identity model.
+
+The goal is to explore authentication systems that eliminate stored credentials and traditional key exchange in IoT environments.
+
+This repository focuses on architecture and security model discussion rather than production implementation.
 ## Concept
 CoreBond investigates deriving device identity from intrinsic physical characteristics of hardware rather than stored secrets or key exchange mechanisms.
 
