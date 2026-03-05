@@ -71,6 +71,15 @@ This approach enables device authentication without storing credentials on the d
 The resulting identity signal is deterministic for a given device within defined environmental tolerances.
 
 Device identity may be derived from multiple intrinsic hardware characteristics whose combined measurements form a stable identity signal.
+## Enrollment Model
+
+CoreBond establishes device identity during the initial linking of two devices.
+
+When devices are first connected, the verifier observes the intrinsic hardware identity signal and records the resulting identity characteristics. This observation forms the baseline identity profile for the device.
+
+Future authentication decisions are made by comparing subsequent identity measurements against this baseline profile.
+
+This enrollment process allows devices to establish trust relationships without pre-provisioned credentials or externally distributed secrets.
 ## Security Assumptions
 
 The CoreBond model assumes the following conditions:
