@@ -35,18 +35,6 @@ No stored secret
 No key exchange
 ## Problem With Traditional Device Authentication
 Most IoT systems rely on stored secrets that can be extracted, cloned, or reused once a device is compromised.
-## Threat Model Considerations
-CoreBond explores architectures intended to reduce risks associated with
-credential extraction and device cloning.
-
-This model assumes attackers may gain firmware access or physical access
-to devices and therefore focuses on removing stored credentials that could
-be extracted and reused.
-
-Further research is required to evaluate resilience against:
-• signal replay
-• environmental variation
-• side-channel observation
 
 
 
@@ -64,3 +52,15 @@ style B fill:#4f81bd,color:#fff
 style C fill:#6aa84f,color:#fff
 style D fill:#b45f06,color:#fff
 ```
+## Threat Model Considerations
+CoreBond explores architectures intended to reduce risks associated with
+credential extraction and device cloning.
+
+This model assumes attackers may gain firmware access or physical access
+to devices and therefore focuses on removing stored credentials that could
+be extracted and reused.
+
+Further research is required to evaluate resilience against:
+• signal replay
+• environmental variation
+• side-channel observation
